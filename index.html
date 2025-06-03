@@ -3,48 +3,109 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Name</title>
+  <title>Eray Genç – Astrophysicist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      max-width: 700px;
-      margin: 40px auto;
+      font-family: 'Inter', sans-serif;
+      max-width: 850px;
+      margin: 50px auto;
       padding: 0 20px;
-      line-height: 1.6;
+      color: #1a1a1a;
     }
     img {
-      max-width: 150px;
-      border-radius: 50%;
+      max-width: 180px;
+      height: auto;
+      display: block;
+      margin-bottom: 15px;
     }
-    h1, h2 {
-      color: #333;
+    header {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 5px;
+    }
+    .tagline {
+      font-style: italic;
+      color: #666;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    section {
+      margin-top: 40px;
     }
     ul {
       padding-left: 20px;
+    }
+    li {
+      margin-bottom: 0.4em;
     }
   </style>
 </head>
 <body>
 
-  <img src="profile_pic-2.png" alt="Your photo" />
-  <h1>Eray Genç</h1>
-  <p>I am a PhD researcher in astrophysics, specialised in applying scientific insight and transformative
-software solutions to maximise scientific return from data under instrument limitations. I have a background in extracting weak signals from noisy survey data through advanced statistical modelling, systematics mitigation, and simulation-based pipeline development. Innovative and result-oriented, with a focus on creative problem solving, programming expertise, and forward-thinking approaches to scientific challenges. Well suited for teamwork and international collaboration, and eager to apply this expertise to planetary missions, such as EnVision, by bridging scientific objectives with spacecraft constraints in a mission-driven environment.</p>
+  <header>
+    <img src="profile_pic.png" alt="Profile picture of Eray Genç">
+    <div>
+      <h1>Eray Genç</h1>
+      <p class="tagline">Astrophysicist | Space Science Enthusiast | Data-Driven Researcher</p>
+      <p>
+        <a href="EGenc_CV.pdf" target="_blank">📄 CV</a> • 
+        <a href="https://orcid.org/0009-0005-2479-8832" target="_blank">ORCID</a> • 
+        <a href="https://www.linkedin.com/in/eray-genç-0929a0104/" target="_blank">LinkedIn</a>
+      </p>
+    </div>
+  </header>
 
-  <p>
-    🔗 <a href="EGenc_CV.pdf" target="_blank">Download CV</a> |
-    <a href="https://orcid.org/0009-0005-2479-8832" target="_blank">ORCID</a> |
-    <a href="https://www.linkedin.com/in/eray-genç-0929a0104" target="_blank">LinkedIn</a> |
-    <a href="mailto:egenc@astro.rub.de">Email</a>
-  </p>
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I am an astrophysicist with a background in observational cosmology, systematics mitigation, and custom pipeline development. My work focuses on extracting weak signals from noisy imaging data, evaluating instrument limitations, and designing tools that support scientific missions with both precision and adaptability. I am particularly interested in interdisciplinary data challenges in space science.
+    </p>
+  </section>
 
-  <h2>Research Highlights</h2>
-  <ul>
-    <li>Extracted faint dust extinction signals from weak-lensing survey data</li>
-    <li>Developed custom Python pipelines for multi-wavelength imaging analysis</li>
-    <li>Modeled detection biases in cosmic shear measurements</li>
-    <li>Worked with multi-terabyte data from cosmological surveys</li>
-  </ul>
+  <section>
+    <h2>Research Interests</h2>
+    <ul>
+      <li>Systematic modelling and trade-off analysis in astrophysical data interpretation</li>
+      <li>Developing simulations to test and mitigate instrument and survey systematics</li>
+      <li>Handling spatial resolution, imaging depth, and wavelength-dependent noise in multi-band data</li>
+      <li>Custom pipeline development and automation for large-scale imaging surveys</li>
+      <li>Scientific data reduction and calibration, including near-IR imaging datasets</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>PhD Research – Circumgalactic Dust Extinction:</strong> Developed a Python pipeline to detect and model faint dust extinction signals across multi-wavelength survey data. Included simulation, signal extraction, and covariance analysis.</li>
+      <li><strong>Master’s Thesis – Detection Bias in Cosmic Shear:</strong> Created a survey-independent detection probability function using GalSim and Source Extractor, to quantify selection bias from blending in cosmic shear measurements.</li>
+      <li><strong>Pipeline Development – Observational Cosmology:</strong> Built and maintained custom Python tools to analyse terabyte-scale imaging datasets in weak lensing studies, including trade-off handling between photometric depth and statistical power.</li>
+      <li><strong>Data Reduction – Near-IR Imaging:</strong> Performed scientific data reduction of deep near-infrared images, including flat-fielding, background subtraction, and mosaicking.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>GitHub Projects</h2>
+    <ul>
+      <li><a href="https://github.com/YOURUSERNAME/cgm_dust_extinction" target="_blank"><strong>cgm_dust_extinction</strong></a> – A Python package to simulate and model CGM dust extinction in galaxy surveys.</li>
+      <li><a href="https://github.com/YOURUSERNAME/detection-bias-galsim" target="_blank"><strong>Detection Bias Simulation</strong></a> – GalSim-based pipeline for measuring detection efficiency in blended galaxy fields.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:youremail@domain.com">youremail@domain.com</a></p>
+  </section>
 
 </body>
 </html>
+
