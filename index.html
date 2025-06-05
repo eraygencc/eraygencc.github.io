@@ -193,19 +193,22 @@
   <h2>Projects</h2>
 
   <div class="project-row">
-    <div class="text">
-      <h3>Circumgalactic Dust Extinction in KiDS-DR4</h3>
+      <h3>Simulation of Circumgalactic Dust Extinction in MICE2</h3>
       <p>
-        Developed a Python pipeline to detect and model faint CGM dust extinction signals using multi-band survey data and simulations (MICE2).
+      I developed a custom Python pipeline to simulate the impact of circumgalactic dust extinction on source galaxy magnitudes using the MICE2 cosmological simulation. The method uses a KDTree structure to efficiently identify nearest neighbours: for each "source" galaxy, the pipeline computes and sums the dust extinction contributions from nearby "lens" galaxies' halos. The extinction profile is based on observational results from Ménard et al. (2010), as recommended by García-Fernández et al. (2018), and scaled using dust-to-stellar mass ratios from Triani et al. (2020). This modular pipeline can be applied to any cosmological galaxy catalogue to modify magnitudes at arbitrary wavelengths due to circumgalactic dust. The code is available in my <a href="https://github.com/your-username/cgm-dust-extinction" target="_blank">cgm-dust-extinction</a> repository.
       </p>
-    </div>
     <img src="project1.png" alt="CGM Dust Extinction" style="width: 70%;">
-    
   </div>
 
   <div class="project">
     <h3>Detection Bias in Cosmic Shear</h3>
-    <p>Designed detection probability function using GalSim and Source Extractor to model blending-induced biases in shear surveys.</p>
+    <p>
+      I constrained a pipeline to study detection bias in galaxy surveys by simulating how the presence of nearby bright objects affects the detectability of faint sources. Using <strong>GalSim</strong>, we generate realistic galaxies and inject them into real observational data from the Kilo-Degree Survey. We then use <strong>Source Extractor</strong> to assess which galaxies are detected and under what conditions they are missed. By analyzing these detection outcomes, we derived a fitting function for the detection probability as a function of angular separation and flux ratio with neighbouring galaxies. This function captures how high-density regions, often associated with larger lensing signals, are more prone to detection losses. 
+    </p>
+    <p>
+       The pipeline includes tools to assign weights to galaxies based on this detection probability, which can then be incorporated into measurements to correct for the resulting bias. While originally developed in the context of cosmic shear surveys, this approach is broadly applicable to any study relying on accurate galaxy number counts or shape measurements in crowded fields. The full code is publicly available in my <a href="https://github.com/your-username/detection-bias" target="_blank">detection-bias</a> repository.
+    </p>
+
     <div style="display: flex; gap: 4%; margin-top: 10px;">
       <img src="project2_1.png" alt="Detection Bias 1" style="width: 48%;">
       <img src="project2_2.png" alt="Detection Bias 2" style="width: 48%;">
@@ -213,8 +216,17 @@
   </div>
 
   <div class="project">
-    <h3>Near-IR Imaging of Radio Galaxy Hosts</h3>
-    <p>Reduced and analysed LBT near-IR imaging of radio galaxy hosts using IRAF and GALFIT.</p>
+    <h3> Near-IR Imaging of Radio Galaxy Hosts</h3>
+    <p>
+  I conducted the reduction and analysis of near-infrared imaging data of six radio galaxy hosts observed with the LUCI1 and LUCI2 instruments on the Large Binocular Telescope (LBT). These instruments use HAWAII-2RG (H2RG) detectors, which required a dedicated non-linearity correction to accurately translate incoming photons into electronic signal. 
+</p>
+<p>
+  The custom reduction pipeline involved several key steps using <strong>IRAF</strong>. First, bad pixels were removed using instrument-specific masks. Then, flatfield corrections were applied to address pixel-to-pixel sensitivity variations, ensuring uniform illumination. The most critical step was sky subtraction, which required different strategies depending on redshift. For low-redshift galaxies, master sky frames were created from provided sky exposures. For high-redshift targets without dedicated sky frames, a rolling-median approach was implemented to construct sky estimates directly from science frames. This adaptive technique accounted for spatial and temporal sky variability, which is especially prominent in near-IR observations. Bright stars were also masked to prevent contamination.
+</p>
+<p>
+  Following reduction, I performed photometric measurements on all galaxies using <strong>IRAF</strong>, and for the low-redshift sample, I conducted two-dimensional morphological modeling using <strong>GALFIT</strong>. This project provided valuable hands-on experience in the full near-IR data reduction chain, from raw frames to scientific measurements.
+</p>
+
     <img src="project3.png" alt="LBT Imaging">
   </div>
 </section>
