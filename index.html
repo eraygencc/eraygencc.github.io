@@ -102,6 +102,28 @@
   text-align: right;
 }
 
+    #beyond-research .hobby-images {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+#beyond-research .hobby-images img {
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Set proportional widths */
+#beyond-research .hobby-images img:first-child {
+  flex: 2; /* e.g. wider scuba image */
+}
+
+#beyond-research .hobby-images img:last-child {
+  flex: 1; /* e.g. narrower painting image */
+}
+
+
   </style>
 </head>
 <body>
@@ -209,17 +231,18 @@
       </ul>
     </section>
 
-    <section id="hobbies">
-      <h2>Beyond Research</h2>
-      <div style="display: flex; gap: 4%; margin-top: 10px;">
-         <img src="scuba.JPG" alt="Scuba" style="width:70%;">
-         <img src="watercolour.png" alt="Watercolour" style= width: 300px;">
-      </div>
-      <p>
-      Outside of astrophysics, I’m passionate about exploring both the deep sea and artistic expression. I’m a certified scuba diver, and I’ve had the chance to dive in breathtaking underwater landscapes from the Red Sea in Egypt to the Pacific coasts of Japan. I also enjoy painting with watercolours — a relaxing way for me to capture moods and moments beyond the realm of data and research. These hobbies keep me grounded and creatively inspired in my scientific journey.
-      </p>
+    <section id="beyond-research">
+    <h2>Beyond Research</h2>
+    <p>
+     Outside of astrophysics, I’m passionate about exploring both the deep sea and artistic expression. I’m a certified scuba diver, and I’ve had the chance to dive in breathtaking underwater landscapes from the Red Sea in Egypt to the Pacific coasts of Japan. I also enjoy painting with watercolours — a relaxing way for me to capture moods and moments beyond the realm of data and research. These hobbies keep me grounded and creatively inspired in my scientific journey.
+     </p>
+  
+    <div class="hobby-images">
+      <img src="scuba.JPG" alt="Scuba diving">
+       <img src="watercolour.png" alt="Watercolour painting">
+     </div>
+   </section>
 
-    </section>
 
     <section id="contact">
       <h2>Contact</h2>
