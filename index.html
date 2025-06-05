@@ -8,103 +8,214 @@
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      max-width: 850px;
-      margin: 50px auto;
-      padding: 0 20px;
+      margin: 0;
+      display: flex;
+      background-color: #f9f9fb;
       color: #1a1a1a;
     }
-    img {
-      max-width: 180px;
-      height: auto;
-      display: block;
-      margin-bottom: 15px;
+
+    nav {
+      width: 220px;
+      background-color: #322f46;
+      min-height: 100vh;
+      padding: 30px 20px;
+      box-sizing: border-box;
+      color: #fff;
     }
+
+    nav h2 {
+      font-size: 1.4em;
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      display: block;
+      color: #c2bdf5;
+      text-decoration: none;
+      margin: 10px 0;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    main {
+      flex-grow: 1;
+      padding: 50px;
+      max-width: 900px;
+    }
+
     header {
       display: flex;
       align-items: center;
       gap: 30px;
+      margin-bottom: 40px;
     }
+
+    img {
+      max-width: 180px;
+      height: auto;
+      border-radius: 10px;
+    }
+
     h1 {
       font-size: 2em;
       margin-bottom: 5px;
     }
+
     .tagline {
       font-style: italic;
       color: #666;
     }
+
     a {
-      color: #0066cc;
-      text-decoration: none;
+      color: #5e3bcf;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
     section {
-      margin-top: 40px;
+      margin-bottom: 50px;
     }
+
     ul {
       padding-left: 20px;
     }
+
     li {
-      margin-bottom: 0.4em;
+      margin-bottom: 0.6em;
+    }
+
+    .project {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .project img {
+      width: 120px;
+      border-radius: 8px;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <img src="profile_pic-2.png" alt="Profile picture of Eray Genç">
-    <div>
-      <h1>Eray Genç</h1>
-      <p class="tagline">Astrophysicist | Space Exploration Enthusiast </p>
+  <nav>
+    <h2>Navigate</h2>
+    <a href="#about">About Me</a>
+    <a href="#interests">Research Interests</a>
+    <a href="#projects">Projects</a>
+    <a href="#experiences">Talks & Posters</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <header>
+      <img src="profile_pic-2.png" alt="Profile picture of Eray Genç">
+      <div>
+        <h1>Eray Genç</h1>
+        <p class="tagline">Astrophysicist | Space Exploration Enthusiast</p>
+        <p>
+          <a href="EGenc_CV-2.pdf" target="_blank">📄 CV</a> •
+          <a href="https://orcid.org/0009-0005-2479-8832" target="_blank">ORCID</a> •
+          <a href="https://www.linkedin.com/in/eray-genç-0929a0104/" target="_blank">LinkedIn</a>
+        </p>
+      </div>
+    </header>
+
+   <section>
+  <h2>About Me</h2>
+  <p>
+    Hello! I'm Eray, an astrophysicist originally from Istanbul, Türkiye. I moved to Germany in 2016, driven by a long-term passion for space exploration. After completing an intensive German language course, I began my BSc in Physics at Heidelberg University. There, I had the opportunity to work on the reduction and analysis of near-infrared imaging data of radio galaxy hosts at the Landessternwarte.
+  </p>
+  <p>
+    I continued with an MSc in Astrophysics at the University of Bonn, where I worked under the supervision of Prof. Dr. Peter Schneider at the Argelander-Institut für Astronomie. This experience not only introduced me to gravitational lensing and cosmology but also gave me my first taste of teaching. 
+  </p>
+  <p>
+    I’m currently pursuing my PhD at the German Centre for Cosmological Lensing in Bochum. Supervised by Dr. Angus H. Wright and Prof. Dr. Hendrik Hildebrandt, I focus on measuring circumgalactic dust extinction using data from the Kilo-Degree Survey (KiDS).
+  </p>
+  <p>
+    My research centers on developing custom pipelines for complex, noisy, multi-wavelength datasets. I specialize in extracting weak astrophysical signals, modelling observational systematics, and evaluating trade-offs between resolution, coverage, and precision to support space science missions. I’m especially drawn to interdisciplinary data challenges and hope to contribute to future exploration efforts with both scientific curiosity and technical expertise.
+  </p>
+  <p>
+    Outside of academia, I’m actively involved in outreach and community. I’m a member of the young German Physical Society (jDPG) and currently serve as the social media manager for the Collaborative Research Centre 1491 (SFB1491). I’m also a certified scuba diver — captivated by marine life from Egypt to Japan — and enjoy expressing myself through watercolour painting.
+  </p>
+  <p>
+    Feel free to get in touch!
+  </p>
+</section>
+
+
+
+    <section id="interests">
+      <h2>Research Interests</h2>
+      <ul>
+        <li>Development of pipelines to mitigate instrumental systematics.</li>
+        <li>Signal extraction in noisy, multi-wavelength data.</li>
+        <li>Bayesian inference & cross-correlation techniques.</li>
+        <li>Scalable, reproducible workflows for science operations.</li>
+        <li>Responsive methods for subsurface feature detection via radargrams.</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <img src="project1.png" alt="CGM Dust Extinction">
+        <div>
+          <strong>Circumgalactic Dust Extinction in KiDS-DR4</strong>
+          <p>Developed a Python pipeline to detect and model faint CGM dust extinction signals using multi-band survey data and simulations (MICE2).</p>
+        </div>
+      </div>
+      <div class="project">
+        <img src="project2_1.png" alt="Detection Bias" style="width:48%; display:inline-block; margin-right:2%;">
+        <img src="project2_2.png" alt="Detection Bias" style="width:48%; display:inline-block;">
+
+
+        <div>
+          <strong>Detection Bias in Cosmic Shear</strong>
+          <p>Designed detection probability function using GalSim and Source Extractor to model blending-induced biases in shear surveys.</p>
+        </div>
+      </div>
+      <div class="project">
+        <img src="project3.png" alt="LBT Imaging">
+        <div>
+          <strong>Near-IR Imaging of Radio Galaxy Hosts</strong>
+          <p>Reduced and analysed LBT near-IR imaging of radio galaxy hosts using IRAF and GALFIT.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiences">
+      <h2>Invited Talks</h2>
+      <img src="aspen_talk.jpg" alt="Aspen Talk">
+      <ul>
+        <li>`Exploring dust transport in the dark matter halos across stellar mass bins with weak-lensing surveys', General Assembly of SFB1491, Dortmund, Germany, February 2025</li>
+        <li>`Cosmology with large-scale surveys', General Assembly of SFB1491, Bochum, Germany, June 2024</li>
+        <li>`Exploring dust transport in dark matter halos of galaxies using weak-lensing surveys', Aspen Center for Physics, Aspen, USA, March 2024</li>
+        <li>`Measurement of circumgalactic dust extinction on KiDS-DR4', General Assembly of SFB1491, Dortmund, Germany, November 2023</li>
+      </ul>
+    </section>
+
+    <section id="hobbies">
+      <h2>Hobbies</h2>
+      <img src="scuba.JPG" alt="Scuba">
+      <img src="watercolour.png" alt="Watercolour">
       <p>
-        <a href="EGenc_CV-2.pdf" target="_blank">📄 CV</a> • 
-        <a href="https://orcid.org/0009-0005-2479-8832" target="_blank">ORCID</a> • 
-        <a href="https://www.linkedin.com/in/eray-genç-0929a0104/" target="_blank">LinkedIn</a>
+      Outside of astrophysics, I’m passionate about exploring both the deep sea and artistic expression. I’m a certified scuba diver, and I’ve had the chance to dive in breathtaking underwater landscapes from the Red Sea in Egypt to the Pacific coasts of Japan. I also enjoy painting with watercolours — a relaxing way for me to capture moods and moments beyond the realm of data and research. These hobbies keep me grounded and creatively inspired in my scientific journey.
       </p>
-    </div>
-  </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I am an astrophysicist with a background in observational cosmology, systematics mitigation, and custom pipeline development. My work focuses on extracting weak signals from noisy imaging data, evaluating instrument limitations, and designing tools that support scientific missions with both precision and adaptability. I am particularly interested in interdisciplinary data challenges in space science.
-    </p>
-  </section>
+    </section>
 
-  <section>
-    <h2>Research Interests</h2>
-    <ul>
-      <li>Development and optimisation of custom pipelines to manage instrumental systematics to maximise scientific return, including the design and assessment of trade-offs between resolution, coverage, and signal quality.</li>
-      <li>Statistical signal extraction from complex, noisy, multi-wavelength data, particularly in large-scale surveys and operationally constrained environments.</li>
-      <li>Application of Bayesian inference and cross-correlation techniques for weak signal enhancement and structural analysis.</li>
-      <li>Design of automated, scalable data workflows supporting reproducibility and efficiency in science operations.</li>
-      <li>Ongoing interest in developing of ad-hoc and responsive methods to enhance subsurface feature detection, e.g. through cross-correlation and stacking of multi-pass radargrams.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Circumgalactic Dust Extinction in KiDS-DR4:</strong> Developed a Python pipeline to detect and model faint circumgalactic dust extinction signals using multi-wavelength survey data. Included systematic modelling with MICE2 simulation, trade-off analysis between photometric accuracy and sample size, and covariance analysis.</li>
-      <li><strong>Detection Bias in Cosmic Shear:</strong> Created a survey-independent detection probability function for galaxies using GalSim and Source Extractor, to quantify detection bias from blending in cosmic shear measurements.</li>
-      <li><strong>Near-IR Imaging of Radio Galaxy Hosts with LBT :</strong> Performed scientific data reduction of near-IR images of six radio galaxy hosts at different redshifts taken with LBT and adaptive optics, including flat-fielding, and background subtraction with IRAF, which is followed by a morphological analysis with GALFIT</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>GitHub Projects</h2>
-    <ul>
-      <li><a href="https://github.com/eraygencc/cgm-dust-extinction" target="_blank"><strong>cgm-dust-extinction</strong></a> – custom pipeline written in Python to simulate and model CGM dust extinction in galaxy surveys.</li>
-      <li><a href="https://github.com/eraygencc/detection-bias" target="_blank"><strong>detection-bias</strong></a> – Python-based pipeline for measuring detection efficiency of galaxies in imaging surveys, using GALSIM and Source Extractor.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:egenc@astro.rub.de">egenc@astro.rub.de</a></p>
-  </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:egenc@astro.rub.de">egenc@astro.rub.de</a></p>
+    </section>
+  </main>
 
 </body>
 </html>
-
