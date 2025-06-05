@@ -192,10 +192,10 @@
     <section id="projects">
   <h2>Projects</h2>
 
-  <div class="project-row">
+  <div class="project">
       <h3>Simulation of Circumgalactic Dust Extinction in MICE2</h3>
       <p>
-      I developed a custom Python pipeline to simulate the impact of circumgalactic dust extinction on source galaxy magnitudes using the MICE2 cosmological simulation. The method uses a KDTree structure to efficiently identify nearest neighbours: for each "source" galaxy, the pipeline computes and sums the dust extinction contributions from nearby "lens" galaxies' halos. The extinction profile is based on observational results from Ménard et al. (2010), as recommended by García-Fernández et al. (2018), and scaled using dust-to-stellar mass ratios from Triani et al. (2020). This modular pipeline can be applied to any cosmological galaxy catalogue to modify magnitudes at arbitrary wavelengths due to circumgalactic dust. The code is available in my <a href="https://github.com/your-username/cgm-dust-extinction" target="_blank">cgm-dust-extinction</a> repository.
+      I developed a custom Python pipeline to simulate the impact of circumgalactic dust extinction on source galaxy magnitudes using the MICE2 cosmological simulation. The method uses a KDTree structure to efficiently identify nearest neighbours: for each "source" galaxy, the pipeline computes and sums the dust extinction contributions from nearby "lens" galaxies' halos. The extinction profile is based on observational results from Ménard et al. (2010), as recommended by García-Fernández et al. (2018), and scaled using dust-to-stellar mass ratios from Triani et al. (2020). This modular pipeline can be applied to any cosmological galaxy catalogue to modify magnitudes at arbitrary wavelengths due to circumgalactic dust. The code is available in my <a href="https://github.com/eraygencc/cgm-dust-extinction" target="_blank">cgm-dust-extinction</a> repository.
       </p>
     <img src="project1.png" alt="CGM Dust Extinction" style="width: 70%;">
   </div>
@@ -206,7 +206,7 @@
       I constrained a pipeline to study detection bias in galaxy surveys by simulating how the presence of nearby bright objects affects the detectability of faint sources. Using <strong>GalSim</strong>, we generate realistic galaxies and inject them into real observational data from the Kilo-Degree Survey. We then use <strong>Source Extractor</strong> to assess which galaxies are detected and under what conditions they are missed. By analyzing these detection outcomes, we derived a fitting function for the detection probability as a function of angular separation and flux ratio with neighbouring galaxies. This function captures how high-density regions, often associated with larger lensing signals, are more prone to detection losses. 
     </p>
     <p>
-       The pipeline includes tools to assign weights to galaxies based on this detection probability, which can then be incorporated into measurements to correct for the resulting bias. While originally developed in the context of cosmic shear surveys, this approach is broadly applicable to any study relying on accurate galaxy number counts or shape measurements in crowded fields. The full code is publicly available in my <a href="https://github.com/your-username/detection-bias" target="_blank">detection-bias</a> repository.
+       The pipeline includes tools to assign weights to galaxies based on this detection probability, which can then be incorporated into measurements to correct for the resulting bias. While originally developed in the context of cosmic shear surveys, this approach is broadly applicable to any study relying on accurate galaxy number counts or shape measurements in crowded fields. The full code is publicly available in my <a href="https://github.com/eraygencc/detection-bias" target="_blank">detection-bias</a> repository.
     </p>
 
     <div style="display: flex; gap: 4%; margin-top: 10px;">
@@ -235,7 +235,7 @@
     <section id="experiences">
       <h2>Invited Talks</h2>
       <div style="text-align: center;">
-         <img src="aspen_talk_v2.jpg" alt="Aspen Talk" style="width: 70%; ">
+         <img src="aspen_talk_v2.jpg" alt="Aspen Talk v2" style="width: 70%;">
       </div>
       <ul>
         <li>`Exploring dust transport in the dark matter halos across stellar mass bins with weak-lensing surveys', General Assembly of SFB1491, Dortmund, Germany, February 2025</li>
