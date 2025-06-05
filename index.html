@@ -230,10 +230,18 @@ figcaption {
        The pipeline includes tools to assign weights to galaxies based on this detection probability, which can then be incorporated into measurements to correct for the resulting bias. While originally developed in the context of cosmic shear surveys, this approach is broadly applicable to any study relying on accurate galaxy number counts or shape measurements in crowded fields. The full code is publicly available in my <a href="https://github.com/eraygencc/detection-bias" target="_blank">detection-bias</a> repository.
     </p>
 
-    <div style="display: flex; gap: 4%; margin-top: 10px;">
-      <img src="project2_1.png" alt="Detection Bias 1" style="width: 48%;">
-      <img src="project2_2.png" alt="Detection Bias 2" style="width: 48%;">
-    </div>
+    <figure style="margin-top: 10px;">
+      <div style="display: flex; gap: 4%;">
+       <img src="project2_1.png" alt="Detection Bias Function" style="width: 48%;">
+       <img src="project2_2.png" alt="Crowded Field Example" style="width: 48%;">
+      </div>
+      <figcaption style="margin-top: 8px; font-size: 0.95em; color: #555;">
+       <em>Left panel</em>: Constrained detection probability as a function of angular separation and brightness difference between injected sources and their nearest neighbours, based on simulations using <code>GalSim</code> and <code>Source Extractor</code>.
+       <br>
+       <em>Right panel</em>: A representative example of a crowded region in KiDS survey tiles, illustrating typical environments where detection bias becomes significant.
+      </figcaption>
+     </figure>
+
   </div>
 
   <div class="project">
@@ -248,16 +256,28 @@ figcaption {
   Following reduction, I performed photometric measurements on all galaxies using <strong>IRAF</strong>, and for the low-redshift sample, I conducted two-dimensional morphological modeling using <strong>GALFIT</strong>. This project provided valuable hands-on experience in the full near-IR data reduction chain, from raw frames to scientific measurements.
 </p>
 
-    <img src="project3.png" alt="LBT Imaging">
+    <figure>
+  <img src="project3.png" alt="Environment of QSO B0104+0215" style="width:100%;">
+  <figcaption>
+    <em>Left panel</em>: Near-infrared imaging of the environment of quasar B0104+0215, corrected only for detector non-linearity. The image still contains residual background and instrumental artifacts.
+    <br>
+    <em>Right panel</em>: The same field after full reduction, including bad pixel masking, flat-fielding, and sky subtraction. These corrections significantly enhance the visibility of faint extended structures and enable reliable photometric and morphological analyses.
+  </figcaption>
+</figure>
+
   </div>
 </section>
 
 
     <section id="experiences">
       <h2>Invited Talks</h2>
-      <div style="text-align: center;">
-         <img src="aspen_talk_v2.jpg" alt="Aspen Talk v2" style="width: 70%;">
-      </div>
+      <figure style="text-align: center; margin-top: 20px;">
+         <img src="aspen_talk_v2.jpg" alt="Aspen Talk v2" style="width: 80%;">
+       <figcaption style="margin-top: 8px; font-size: 0.95em; color: #555;">
+           Giving a talk at the Aspen Dust Conference in Aspen, USA, March 2024.
+       </figcaption>
+       </figure>
+
       <ul>
         <li>`Exploring dust transport in the dark matter halos across stellar mass bins with weak-lensing surveys', General Assembly of SFB1491, Dortmund, Germany, February 2025</li>
         <li>`Cosmology with large-scale surveys', General Assembly of SFB1491, Bochum, Germany, June 2024</li>
