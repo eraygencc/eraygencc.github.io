@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Eray Genç – Astrophysicist</title>
@@ -125,6 +126,14 @@
   max-width:33%;
 }
 
+  
+figcaption {
+  font-size: 0.9em;
+  color: grey;
+  margin-top: 5px;
+}
+
+
 
   </style>
 </head>
@@ -197,7 +206,19 @@
       <p>
       I developed a custom Python pipeline to simulate the impact of circumgalactic dust extinction on source galaxy magnitudes using the MICE2 cosmological simulation. The method uses a KDTree structure to efficiently identify nearest neighbours: for each "source" galaxy, the pipeline computes and sums the dust extinction contributions from nearby "lens" galaxies' halos. The extinction profile is based on observational results from Ménard et al. (2010), as recommended by García-Fernández et al. (2018), and scaled using dust-to-stellar mass ratios from Triani et al. (2020). This modular pipeline can be applied to any cosmological galaxy catalogue to modify magnitudes at arbitrary wavelengths due to circumgalactic dust. The code is available in my <a href="https://github.com/eraygencc/cgm-dust-extinction" target="_blank">cgm-dust-extinction</a> repository.
       </p>
-    <img src="project1.png" alt="CGM Dust Extinction" style="width: 70%;">
+    <!-- <img src="project1.png" alt="CGM Dust Extinction" style="width: 70%;"> -->
+    <figure>
+       <img src="project1.png" alt="CGM Dust Extinction" style="width:100%;">
+     <figcaption>
+       <em>Upper left</em>: The simulated extinction in the \(V\)-band for galaxies within the redshift range \(0.25 < z < 0.35\), integrated along the line of sight.
+        <br>
+        <em>Upper right</em>: The large-scale structure in the same region, but over a wider redshift range \(0.15 < z < 0.52\). The red box highlights the specific region displayed in the lower panel.
+        <br>
+        <em>Lower panel</em>: The integrated \(V\)-band extinction in RA-\(z\) space, focussing on sources within a narrow declination slice of \(19^\circ < \mathrm{Dec} < 21^\circ\). These visualizations illustrate the spatial distribution and redshift evolution of the simulated \(V\)-band extinction, providing a qualitative check of the implemented dust model and its correlation with the underlying large-scale structure.
+       </figcaption>
+    </figure>
+
+
   </div>
 
   <div class="project">
